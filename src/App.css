@@ -2,3 +2,42 @@ a {
     color: black;
     font-style: italic;
 }
+
+
+.navbar-layout {
+    /* position: absolute; */
+    /* transform: translate(0px, 0px); */
+    /* top: 100px; */
+    z-index: 100;
+}
+
+.navbar-enter {
+    opacity: 0;
+    transform: translate(0px, -50px);
+}
+
+.navbar-enter-active {
+    opacity: 1;
+    transform: translate(0px, 0px);
+    transition: 0.5s;
+}
+
+.navbar-exit {
+    opacity: 1;
+}
+
+.navbar-exit-active {
+    opacity: 0;
+    transform: translate(0px, -50px);
+    transition: 0.5s;
+}
+
+.menu-btn {
+    transition: 0.5s;
+    transform: scale(1.5);
+}
+
+.btn-active {
+    transform: rotate(90deg) scale(1.5);
+    transition: 0.5s;
+}

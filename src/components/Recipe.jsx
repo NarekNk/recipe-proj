@@ -19,9 +19,10 @@ const Recipe = ({ title, image, id }) => {
 const Card = styled.div`
     position: relative;
     margin: 20px 0;
+
     img {
         max-width: 250px;
-        border-radius: 15px;
+        border-radius: 30px;
     }
 
     h4 {

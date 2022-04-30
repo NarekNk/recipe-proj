@@ -21,11 +21,14 @@ const Couisine = () => {
     }
 
     return (
-        <List>
-            {results.map(recipe => {
-                return <Recipe key={recipe.id} image={recipe.image} title={recipe.title} id={recipe.id} />
-            })}
-        </List>
+        <>
+            <h2 style={{textTransform: "capitalize"}}>{query}</h2>
+            <List>
+                {results.map(recipe => {
+                    return <Recipe key={recipe.id} image={recipe.image} title={recipe.title} id={recipe.id} />
+                })}
+            </List>
+        </>
     )
 }
 

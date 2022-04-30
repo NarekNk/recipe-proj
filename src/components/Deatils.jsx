@@ -34,6 +34,7 @@ const Cont = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    margin-top: 35px;
     p {
         width: 40%;
     }
